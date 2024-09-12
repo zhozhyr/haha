@@ -1,15 +1,15 @@
-import { useState } from 'react'
-
+import {Routes, Route} from 'react-router-dom'
+import Registration from './pages/Reg/Reg'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      
-        
-      
+      <Routes>
+        <Route path='/registration' element={<Registration/>}/>
+      </Routes>      
     </>
   )
 }
