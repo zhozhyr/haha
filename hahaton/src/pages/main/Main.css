@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+.header-title{
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 30px 60px;   
+}
+.netImg{
+    width: 100%;
+}
+
+.description{
+    display: flex;
+}
+.description img{
+    width: 25%;
+}
+
+.description .text{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.65vw;
+    padding: 0 20px;
+}
+
+  
+.text p {
+    overflow: hidden;
+    white-space: nowrap;
+    
+    width: 0;
+    animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+  }
+  
+  .text p:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .text p:nth-child(3) {
+    animation-delay: 2s;
+  }
+  
+  .text p:nth-child(4) {
+    animation-delay: 3s;
+  }
+  
+  .text p:nth-child(5) {
+    animation-delay: 4s;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  
+  /* Убираем мигающий курсор после завершения анимации */
+  .text p.finished {
+    border-right: none;
+  }
+  
+  .svg-draw path {
+    stroke-dasharray: 320;  /* Общая длина пути */
+    stroke-dashoffset: 320; /* Полностью скрываем путь в начале */
+    animation: draw 4s linear forwards; /* Анимация отрисовки */
+  }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0; /* Путь полностью виден в конце анимации */
+    }
+  }
+  
