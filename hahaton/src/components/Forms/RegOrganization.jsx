@@ -1,5 +1,5 @@
 import './RegForm.css'
-
+import Authentication from '../../pages/Reg/Authentication'
 function OrganizationForm() {
     return (
         <form>

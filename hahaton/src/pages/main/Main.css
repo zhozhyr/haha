@@ -4,13 +4,52 @@ body{
     background-color: white;
     color: black;
 }
+
+header{
+  margin: 0;
+  padding: 0
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+.content{
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left, .right{
+  align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.right img {
+  height: 52px;
+  margin: auto 20px auto 0;
+}
+
+
 .header-title{
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    margin: 30px 60px;   
+
 }
+
+header .line{
+  width: 96%;
+  margin: 0 2%;
+}
+
+
 .netImg{
     width: 100%;
 }
@@ -20,12 +59,19 @@ body{
 }
 .description img{
     width: 25%;
+
+
 }
 
+/* *{
+  border: red 1px solid;
+} */
 .description .text{
     font-family: "JetBrains Mono", monospace;
     font-size: 1.65vw;
     padding: 0 20px;
+    width: 70%;
+
 }
 
   

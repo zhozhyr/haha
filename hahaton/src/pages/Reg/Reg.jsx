@@ -16,7 +16,18 @@ function Registration() {
 
     return ( 
         <>
-            <h1 className="header-title">BNTPNHA API</h1>
+             <header>
+      <div className="content">
+      <div className="left">
+      <a href="/"><h1 className="header-title">BNTPNHA API</h1></a>
+
+      </div>
+      <div className="right">
+
+      </div>
+      </div>
+
+    </header>
             <img src={bg} alt='bg'className='bg'/> 
             <div className='registration'>
                 <h2 className="registration-title">РЕГИСТРАЦИЯ</h2>

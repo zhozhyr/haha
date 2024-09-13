@@ -12,7 +12,7 @@ function UserForm() {
             <label htmlFor='input3'>Поле 3</label>
             <input id='input3' name='input3' type='text' className='styled-input'/>
 
-            <button className='styled-button'>Зарегистрироваться</button>
+           <button className='styled-button'>Зарегистрироваться</button>
         </form>
     );
 }
